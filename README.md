@@ -20,16 +20,29 @@ Run this command to clone the repo on your local machine
 git clone https://github.com/swensor88/nwo_subscriptions.git
 ```
 
-### Step 2: Build With Docker Compose
+### Step 2: Make your .env File
 
-In the project's root folder, run this command to build images for the db and the api
+Easiest method is to copy example file, using this command:
+```bash
+cp nwo_subscriptions/subscriptions/subscription_api/.env.example nwo_subscriptions/subscriptions/subscription_api/.env
+```
+
+### Step 3: Build With Docker Compose
+
+Enter the project's root folder: 
+
+```bash
+cd nwo_subscriptions
+```
+
+Run this command to build images for the db and the api
 
 ```bash
 docker-compose build
 ```
 
 
-### Step 3: Update/Start Container
+### Step 4: Update/Start Container
 
 Run this command to update and start your containers in detached mode.
 ```bash
